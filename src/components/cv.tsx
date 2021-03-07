@@ -1,6 +1,7 @@
 import React, { Fragment, useRef, useEffect, useState } from 'react';
 import { useSpring, animated, useTrail } from 'react-spring';
 import Header from '../header/header';
+import P from './p';
 
 const Main: React.FC = () => {
 	// @ts-ignore
@@ -21,18 +22,45 @@ const Main: React.FC = () => {
 			onMouseMove={(e) => set({ x: e.clientX })}
 		>
 			<Header />
-			<div className="text-animation">
+			<div className="left-div left-right-common-style">
+				<div className="text-animation item-left">
+					{trail.map((props, index) => (
+						<P
+							items={items}
+							key={index}
+							style={{
+								// @ts-ignore
+								transform: props.x.interpolate(trans),
+							}}
+						/>
+					))}
+				</div>
+			</div>
+			<div className="text-animation item-center">
 				{trail.map((props, index) => (
-					<animated.p
+					<P
+						items={items}
 						key={index}
 						style={{
 							// @ts-ignore
 							transform: props.x.interpolate(trans),
 						}}
-					>
-						{items}
-					</animated.p>
+					/>
 				))}
+			</div>
+			<div className="right-div left-right-common-style">
+				<div className="text-animation item-right">
+					{trail.map((props, index) => (
+						<P
+							items={items}
+							key={index}
+							style={{
+								// @ts-ignore
+								transform: props.x.interpolate(trans),
+							}}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);
