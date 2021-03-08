@@ -13,8 +13,8 @@ body {
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
-
-		.nav-bar {
+		//Common style footer and header
+		.header-footer-style {
 			position: absolute;
 			height: 20vh;
 			width: 100%;
@@ -31,7 +31,7 @@ body {
 				top: 50%;
 				transform: translateY(-50%);
 			}
-			.item-one {
+			.header-footer-style-item-one {
 				height: 100%;
 				width: 100%;
 
@@ -44,16 +44,14 @@ body {
 					}
 				}
 			}
-
-			.item-two {
+			.header-footer-style-item-two {
 				//		transform: rotateY(70deg);
 				height: 100%;
 				width: 2px;
 				background-color: rgb(255, 255, 255);
 				border-radius: 50%;
 			}
-
-			.item-three {
+			.header-footer-style-item-three {
 				height: 100%;
 				width: 100%;
 
@@ -68,6 +66,9 @@ body {
 				}
 			}
 		}
+
+		///
+
 		//CV
 		.left-right-common-style {
 			position: absolute;
@@ -139,30 +140,87 @@ body {
 		}
 
 		//Footer
+
+		.footer {
+			position: absolute;
+			bottom: 0px;
+			height: 20vh;
+			width: 100%;
+
+			z-index: 3;
+			opacity: 1;
+			word-break: break-all;
+			display: flex;
+			font-size: 1.7em;
+			color: #fff;
+			background-color: orange;
+			p {
+				padding: 0px;
+				margin: 0px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.item-one {
+				height: 100%;
+				width: 100%;
+
+				p {
+					position: absolute;
+					left: 10%;
+					transform: translateX(-10%);
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+
+			.item-two {
+				//		transform: rotateY(70deg);
+				height: 100%;
+				width: 2px;
+				background-color: rgb(255, 255, 255);
+				border-radius: 50%;
+			}
+
+			.item-three {
+				height: 100%;
+				width: 100%;
+
+				p {
+					right: 20%;
+					transform: translateX(-20%);
+					position: absolute;
+					color: #fff;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
 	}
 }
 @media (min-width: 471px) and (max-width: 560px) {
 	body {
 		.container {
 			//Header
-			.nav-bar {
-				.item-one {
+			.header-footer-style {
+				font-size: 1.8em;
+
+				p {
+				}
+				.header-footer-style-item-one {
 					p {
-						font-size: 1.8em;
-						left: 3%;
-						transform: translateX(-3%);
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
-
-				.item-two {
+				.header-footer-style-item-two {
 				}
-
-				.item-three {
+				.header-footer-style-item-three {
 					p {
-						font-size: 1.8em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
@@ -213,22 +271,24 @@ body {
 @media (min-width: 561px) and (max-width: 900px) {
 	body {
 		.container {
-			.nav-bar {
-				.item-one {
+			.header-footer-style {
+				font-size: 1.9em;
+
+				p {
+				}
+				.header-footer-style-item-one {
 					p {
-						font-size: 1.8em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
-
-				.item-two {
+				.header-footer-style-item-two {
 				}
-
-				.item-three {
+				.header-footer-style-item-three {
 					p {
-						font-size: 1.8em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
@@ -280,22 +340,24 @@ body {
 @media (min-width: 901px) and (max-width: 1200px) {
 	body {
 		.container {
-			.nav-bar {
-				.item-one {
+			.header-footer-style {
+				font-size: 2.6em;
+
+				p {
+				}
+				.header-footer-style-item-one {
 					p {
-						font-size: 2em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
-
-				.item-two {
+				.header-footer-style-item-two {
 				}
-
-				.item-three {
+				.header-footer-style-item-three {
 					p {
-						font-size: 2em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
@@ -348,22 +410,24 @@ body {
 @media (min-width: 1201px) {
 	body {
 		.container {
-			.nav-bar {
-				.item-one {
+			.header-footer-style {
+				font-size: 3.1em;
+
+				p {
+				}
+				.header-footer-style-item-one {
 					p {
-						font-size: 2.5em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
-
-				.item-two {
+				.header-footer-style-item-two {
 				}
-
-				.item-three {
+				.header-footer-style-item-three {
 					p {
-						font-size: 2.5em;
 						&:hover {
+							cursor: pointer;
 						}
 					}
 				}
@@ -413,170 +477,3 @@ body {
 		}
 	}
 }
-/* @media (min-width: 1201px) and (max-width: 1700px) {
-	body {
-		.container {
-			.nav-bar {
-				.item-one {
-					p {
-						font-size: 1.5em;
-						&:hover {
-						}
-					}
-				}
-
-				.item-two {
-				}
-
-				.item-three {
-					p {
-						font-size: 1.5em;
-						&:hover {
-						}
-					}
-				}
-			}
-			.left-right-common-style {
-			}
-			//This is the common style applied on p for left- right- center- .div
-			.text-animation {
-				p {
-				}
-			}
-			.left-div {
-				.item-left {
-					font-size: 2em;
-					p:first-child {
-						margin-top: 25px;
-					}
-					p:nth-child(2) {
-						margin-top: 40px;
-					}
-				}
-			}
-			.right-div {
-				.item-right {
-					font-size: 1.9em;
-
-					p:first-child {
-						margin-top: 25px;
-					}
-					p:nth-child(2) {
-						margin-top: 40px;
-					}
-				}
-			}
-
-			.item-center {
-				height: 250px;
-				padding-top: 30px;
-				font-size: 1.7em;
-				p:first-child {
-				}
-				p:nth-child(2) {
-					margin-top: 37px;
-				}
-			}
-
-			//Footer
-		}
-	}
-} */
-/* @media (min-width: 901px) and (max-width: 1100px) {
-	body {
-		.container {
-			.nav-bar {
-				.item-one {
-					p {
-						font-size: 1.5em;
-						&:hover {
-						}
-					}
-				}
-
-				.item-two {
-				}
-
-				.item-three {
-					p {
-						font-size: 1.5em;
-						&:hover {
-						}
-					}
-				}
-			}
-			.left-right-common-style {
-			}
-			//This is the common style applied on p for left- right- center- .div
-			.text-animation {
-				p {
-				}
-			}
-			.left-div {
-				.item-left {
-					height: 350px;
-					font-size: 1.6em;
-
-					p:first-child {
-						padding-top: 10px;
-					}
-					p:nth-child(2) {
-						margin-top: 34px;
-					}
-				}
-			}
-			.right-div {
-				.item-right {
-					font-size: 1.6em;
-					height: 350px;
-					p:first-child {
-						padding-top: 8px;
-					}
-					p:nth-child(2) {
-						margin-top: 35px;
-					}
-				}
-			}
-
-			.item-center {
-				height: 250px;
-				padding-top: 35px;
-				font-size: 1.4em;
-				p:first-child {
-				}
-				p:nth-child(2) {
-					margin-top: 37px;
-				}
-			}
-
-			//Footer
-		}
-	}
-} */
-
-/* @media (min-width: 900px) {
-	body {
-		.container {
-			.nav-bar {
-				.item-one {
-					p {
-						font-size: 1.9em;
-						&:hover {
-						}
-					}
-				}
-
-				.item-two {
-				}
-
-				.item-three {
-					p {
-						font-size: 1.9em;
-						&:hover {
-						}
-					}
-				}
-			}
-		}
-	}
-} */

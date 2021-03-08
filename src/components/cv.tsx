@@ -1,6 +1,7 @@
 import React, { Fragment, useRef, useEffect, useState } from 'react';
 import { useSpring, animated, useTrail } from 'react-spring';
 import Header from '../header/header';
+import Footer from './footer/footer';
 import P from './p';
 
 const Main: React.FC = () => {
@@ -62,6 +63,7 @@ const Main: React.FC = () => {
 					))}
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
