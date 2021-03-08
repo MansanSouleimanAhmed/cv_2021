@@ -13,22 +13,16 @@ body {
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
-		/* perspective-origin: 50% 100px;
-        perspective: 1500px;
-        transform-style: preserve-3d;
-        background-color: #000000; */
-		//Header
+
 		.nav-bar {
 			position: absolute;
 			height: 20vh;
 			width: 100%;
 			z-index: 3;
-			//transform: translateZ(700px);
-			//    transform-style: preserve-3d;
 			opacity: 1;
 			word-break: break-all;
 			display: flex;
-			font-size: 1.5em;
+			font-size: 1.7em;
 			color: #fff;
 			background-color: orange;
 			p {
@@ -43,8 +37,8 @@ body {
 
 				p {
 					position: absolute;
-					left: 20%;
-					transform: translateX(-50%);
+					left: 10%;
+					transform: translateX(-10%);
 					&:hover {
 						cursor: pointer;
 					}
@@ -65,7 +59,7 @@ body {
 
 				p {
 					right: 20%;
-					transform: translateX(-50%);
+					transform: translateX(-20%);
 					position: absolute;
 					color: #fff;
 					&:hover {
@@ -91,7 +85,7 @@ body {
 			transform: translateY(-50%);
 			height: 200px;
 			width: 100%;
-			background-color: red;
+			background-color: #000000;
 			p {
 				white-space: nowrap;
 				font-size: 6em;
@@ -147,14 +141,16 @@ body {
 		//Footer
 	}
 }
-@media (min-width: 471px) and (max-width: 850px) {
+@media (min-width: 471px) and (max-width: 560px) {
 	body {
 		.container {
 			//Header
 			.nav-bar {
 				.item-one {
 					p {
-						font-size: 1.5em;
+						font-size: 1.8em;
+						left: 3%;
+						transform: translateX(-3%);
 						&:hover {
 						}
 					}
@@ -165,7 +161,7 @@ body {
 
 				.item-three {
 					p {
-						font-size: 1.5em;
+						font-size: 1.8em;
 						&:hover {
 						}
 					}
@@ -214,13 +210,13 @@ body {
 		}
 	}
 }
-@media (min-width: 850px) and (max-width: 1024px) {
+@media (min-width: 561px) and (max-width: 900px) {
 	body {
 		.container {
 			.nav-bar {
 				.item-one {
 					p {
-						font-size: 1.5em;
+						font-size: 1.8em;
 						&:hover {
 						}
 					}
@@ -231,7 +227,7 @@ body {
 
 				.item-three {
 					p {
-						font-size: 1.5em;
+						font-size: 1.8em;
 						&:hover {
 						}
 					}
@@ -268,9 +264,12 @@ body {
 			}
 
 			.item-center {
+				height: 250px;
+				padding-top: 30px;
 				p:first-child {
 				}
 				p:nth-child(2) {
+					margin-top: 43px;
 				}
 			}
 
@@ -278,6 +277,283 @@ body {
 		}
 	}
 }
+@media (min-width: 901px) and (max-width: 1200px) {
+	body {
+		.container {
+			.nav-bar {
+				.item-one {
+					p {
+						font-size: 2em;
+						&:hover {
+						}
+					}
+				}
+
+				.item-two {
+				}
+
+				.item-three {
+					p {
+						font-size: 2em;
+						&:hover {
+						}
+					}
+				}
+			}
+			.left-right-common-style {
+			}
+			//This is the common style applied on p for left- right- center- .div
+			.text-animation {
+				p {
+				}
+			}
+			.left-div {
+				.item-left {
+					font-size: 1.7em;
+					p:first-child {
+						margin-top: 27px;
+					}
+					p:nth-child(2) {
+						margin-top: 38px;
+					}
+				}
+			}
+			.right-div {
+				.item-right {
+					font-size: 1.7em;
+					p:first-child {
+						margin-top: 27px;
+					}
+					p:nth-child(2) {
+						margin-top: 37px;
+					}
+				}
+			}
+
+			.item-center {
+				height: 250px;
+				padding-top: 30px;
+				font-size: 1.5em;
+				p:first-child {
+				}
+				p:nth-child(2) {
+					margin-top: 37px;
+				}
+			}
+
+			//Footer
+		}
+	}
+}
+@media (min-width: 1201px) {
+	body {
+		.container {
+			.nav-bar {
+				.item-one {
+					p {
+						font-size: 2.5em;
+						&:hover {
+						}
+					}
+				}
+
+				.item-two {
+				}
+
+				.item-three {
+					p {
+						font-size: 2.5em;
+						&:hover {
+						}
+					}
+				}
+			}
+			.left-right-common-style {
+			}
+			//This is the common style applied on p for left- right- center- .div
+			.text-animation {
+				p {
+				}
+			}
+			.left-div {
+				.item-left {
+					font-size: 2em;
+					p:first-child {
+						margin-top: 17px;
+					}
+					p:nth-child(2) {
+						margin-top: 38px;
+					}
+				}
+			}
+			.right-div {
+				.item-right {
+					font-size: 2em;
+					p:first-child {
+						margin-top: 17px;
+					}
+					p:nth-child(2) {
+						margin-top: 37px;
+					}
+				}
+			}
+
+			.item-center {
+				height: 250px;
+				padding-top: 30px;
+				font-size: 1.6em;
+				p:first-child {
+				}
+				p:nth-child(2) {
+					margin-top: 37px;
+				}
+			}
+
+			//Footer
+		}
+	}
+}
+/* @media (min-width: 1201px) and (max-width: 1700px) {
+	body {
+		.container {
+			.nav-bar {
+				.item-one {
+					p {
+						font-size: 1.5em;
+						&:hover {
+						}
+					}
+				}
+
+				.item-two {
+				}
+
+				.item-three {
+					p {
+						font-size: 1.5em;
+						&:hover {
+						}
+					}
+				}
+			}
+			.left-right-common-style {
+			}
+			//This is the common style applied on p for left- right- center- .div
+			.text-animation {
+				p {
+				}
+			}
+			.left-div {
+				.item-left {
+					font-size: 2em;
+					p:first-child {
+						margin-top: 25px;
+					}
+					p:nth-child(2) {
+						margin-top: 40px;
+					}
+				}
+			}
+			.right-div {
+				.item-right {
+					font-size: 1.9em;
+
+					p:first-child {
+						margin-top: 25px;
+					}
+					p:nth-child(2) {
+						margin-top: 40px;
+					}
+				}
+			}
+
+			.item-center {
+				height: 250px;
+				padding-top: 30px;
+				font-size: 1.7em;
+				p:first-child {
+				}
+				p:nth-child(2) {
+					margin-top: 37px;
+				}
+			}
+
+			//Footer
+		}
+	}
+} */
+/* @media (min-width: 901px) and (max-width: 1100px) {
+	body {
+		.container {
+			.nav-bar {
+				.item-one {
+					p {
+						font-size: 1.5em;
+						&:hover {
+						}
+					}
+				}
+
+				.item-two {
+				}
+
+				.item-three {
+					p {
+						font-size: 1.5em;
+						&:hover {
+						}
+					}
+				}
+			}
+			.left-right-common-style {
+			}
+			//This is the common style applied on p for left- right- center- .div
+			.text-animation {
+				p {
+				}
+			}
+			.left-div {
+				.item-left {
+					height: 350px;
+					font-size: 1.6em;
+
+					p:first-child {
+						padding-top: 10px;
+					}
+					p:nth-child(2) {
+						margin-top: 34px;
+					}
+				}
+			}
+			.right-div {
+				.item-right {
+					font-size: 1.6em;
+					height: 350px;
+					p:first-child {
+						padding-top: 8px;
+					}
+					p:nth-child(2) {
+						margin-top: 35px;
+					}
+				}
+			}
+
+			.item-center {
+				height: 250px;
+				padding-top: 35px;
+				font-size: 1.4em;
+				p:first-child {
+				}
+				p:nth-child(2) {
+					margin-top: 37px;
+				}
+			}
+
+			//Footer
+		}
+	}
+} */
+
 /* @media (min-width: 900px) {
 	body {
 		.container {
