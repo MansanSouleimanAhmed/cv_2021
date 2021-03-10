@@ -1,14 +1,31 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useSpring, animated, useTrail } from 'react-spring';
 
 import Footer from './footer/footer';
 import Header from './header/header';
-import Msa from './modals/msa';
+import Modal from './modals/modal';
 import P from './p';
 
-const Main: React.FC = () => {
-	// @ts-ignore
-	const trans = (x) => `translateX(-${x}px)`;
+interface ModalObj {
+	modale: boolean;
+	profile: boolean;
+	msa: boolean;
+	contact: boolean;
+	project: boolean;
+}
+
+const Main: React.FC<any> = () => {
+	const trans = (x: number) => `translateX(-${x}px)`;
+	const initialState: ModalObj = {
+		modale: false,
+		profile: false,
+		msa: false,
+		contact: false,
+		project: false,
+	};
+	const [modaleVar, setModaleVar] = useState(initialState);
+
+	/* onClick={(e: React.MouseEvent<HTMLParagraphElement, MouseEvent>): void => setMsa((msa) => !msa)} */
 	const items = [
 		'I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_',
 		'I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_',
@@ -20,7 +37,7 @@ const Main: React.FC = () => {
 
 	return (
 		<Fragment>
-			<Msa />
+			<Modal modalevar={modaleVar} setmodalevar={setModaleVar} />
 			<div
 				className="container"
 				// @ts-ignore
