@@ -43,7 +43,7 @@ const Main: React.FC<any> = () => {
 				// @ts-ignore
 				onMouseMove={(e) => set({ x: e.clientX })}
 			>
-				<Header />
+				<Header modalevar={modaleVar} setmodalevar={setModaleVar} />
 				<div className="left-div left-right-common-style">
 					<div className="text-animation item-left">
 						{trail.map((props, index) => (
@@ -84,7 +84,7 @@ const Main: React.FC<any> = () => {
 						))}
 					</div>
 				</div>
-				<Footer />
+				<Footer modalevar={modaleVar} setmodalevar={setModaleVar} />
 			</div>
 		</Fragment>
 	);

@@ -9,16 +9,16 @@ import {
 } from './style';
 // import { Container } from './styles';
 
-interface ModalProps {
+interface ModaleProps {
 	modalevar: any;
 	setmodalevar: any;
 }
-const Modal: React.FC<ModalProps> = ({ setmodalevar, modalevar }) => {
-	/* 	if (props.modalevar.modale) {
+const Modal: React.FC<ModaleProps> = ({ setmodalevar, modalevar }) => {
+	if (modalevar.modale) {
 		return null;
-	} */
+	}
 	//console.log(props.modalevar.modale);
-	console.log('test ' + modalevar.modale);
+
 	const msa: any = document.getElementById('modal');
 
 	return ReactDom.createPortal(
