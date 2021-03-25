@@ -1,11 +1,21 @@
 import React, { Fragment } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import ModaleReducer from '../../redux-reducers/index';
 
+import {
+	ModaleMsaAction,
+	ModaleProfileAction,
+	ModaleContactAction,
+	ModaleProjectAction,
+} from './../../redux-actions/actions';
 // import { Container } from './styles';
 interface ModaleProps {
 	modalevar: any;
 	setmodalevar: any;
 }
 const Header: React.FC<ModaleProps> = ({ modalevar, setmodalevar }) => {
+	const dispatch: any = useDispatch();
+
 	return (
 		<header className="header header-footer-style">
 			<div className="item-one header-footer-style-item-one">

@@ -23,9 +23,9 @@ export const OVERLAY_STYLE: React.CSSProperties = {
 };
 export const RED_CROSS_STYLE: React.CSSProperties = {
 	position: 'relative',
-	height: '70px',
-	width: '70px',
-	left: '-2%',
+	height: '60px',
+	width: '60px',
+	left: '-7%',
 	top: '50%',
 	transform: 'translateY(-50%)',
 	borderRadius: '50%',
@@ -38,8 +38,8 @@ export const RED_CROSS_ITEM_ONE_STYLE: React.CSSProperties = {
 	top: '70%',
 	left: '30%',
 	transform: 'rotate(55deg) translate(-40%,-70%)',
-	height: '5px',
-	width: '50px',
+	height: '4px',
+	width: '40px',
 	backgroundColor: '#fff',
 	borderRadius: '40%',
 };
@@ -48,8 +48,17 @@ export const RED_CROSS_ITEM_TWO_STYLE: React.CSSProperties = {
 	top: '50%',
 	left: '10%',
 	transform: 'rotate(130deg) translate(-10%,-50%)',
-	height: '5px',
-	width: '50px',
+	height: '4px',
+	width: '40px',
 	backgroundColor: '#fff',
 	borderRadius: '40%',
+};
+export const MODALE_CONTENT: React.CSSProperties = {
+	position: 'absolute',
+	overflow: 'scroll',
+	height: '100%',
+	width: '80%',
+	left: '10%',
+
+	backgroundColor: 'yellow',
 };

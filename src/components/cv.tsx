@@ -3,9 +3,11 @@ import { useSpring, animated, useTrail } from 'react-spring';
 
 import Footer from './footer/footer';
 import Header from './header/header';
-import Modal from './modals/modal';
+import Modal from './modal/modal';
 import P from './p';
-
+//import ModaleReducer from '../redux-reducers/index';
+//import { useSelector } from 'react-redux';
+import Msa from './modal/modale-content/msa';
 interface ModalObj {
 	modale: boolean;
 	profile: boolean;
@@ -16,16 +18,23 @@ interface ModalObj {
 
 const Main: React.FC<any> = () => {
 	const trans = (x: number) => `translateX(-${x}px)`;
+
 	const initialState: ModalObj = {
-		modale: false,
+		modale: true,
 		profile: false,
 		msa: false,
 		contact: false,
 		project: false,
 	};
 	const [modaleVar, setModaleVar] = useState(initialState);
+	let msaTest: any;
+	/* const test: any = async () => {
+	
+	};
+	test().then((msaTest = useSelector((state: any) => state.ModaleReducer))); */
 
 	/* onClick={(e: React.MouseEvent<HTMLParagraphElement, MouseEvent>): void => setMsa((msa) => !msa)} */
+
 	const items = [
 		'I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_',
 		'I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_',
