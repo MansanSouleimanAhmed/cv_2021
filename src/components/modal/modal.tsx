@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import ReactDom from 'react-dom';
 import Msa from './modale-content/msa';
+import Profile from './modale-content/profile';
+import Project from './modale-content/project';
+import Contact from './modale-content/contact';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -42,7 +45,10 @@ const Modal: React.FC<ModaleProps> = ({ setmodalevar, modalevar }) => {
 		<div style={MODAL_STYLE} data-aos={'fade'}>
 			<div style={OVERLAY_STYLE}>
 				<div style={MODALE_CONTENT}>
-					<Msa setmodalevar={setmodalevar} modalevar={modalevar} />
+					<Msa />
+					<Profile />
+					<Project />
+					<Contact />
 				</div>
 				<div style={RED_CROSS_STYLE} onClick={handleClick}>
 					<div style={RED_CROSS_ITEM_ONE_STYLE}></div>

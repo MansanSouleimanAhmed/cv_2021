@@ -1,17 +1,21 @@
 import React, { Fragment, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
-interface ModaleProps {
-	modalevar: object;
-	setmodalevar: any;
-}
-// import { Container } from './styles';
-
-const Msa: React.FC<ModaleProps> = ({ setmodalevar, modalevar }) => {
-	console.log(modalevar);
+const Msa: React.FC = () => {
+	let msaContent: any = useSelector((state: any) => state.MsaContent);
+	let style = {};
+	let styleFunction: any = () => {
+		if (msaContent == false) {
+			return (style = { display: 'none' });
+		}
+	};
+	styleFunction();
 
 	return (
 		<Fragment>
-			<h1>test</h1>
+			<div style={style}>
+				<h1>Msa</h1>
+			</div>
 		</Fragment>
 	);
 };
