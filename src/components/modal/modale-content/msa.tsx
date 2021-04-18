@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+
 interface ModaleProps {
 	modalevar: object;
 	setmodalevar: any;
@@ -7,6 +8,7 @@ interface ModaleProps {
 
 const Msa: React.FC<ModaleProps> = ({ setmodalevar, modalevar }) => {
 	console.log(modalevar);
+
 	return (
 		<Fragment>
 			<h1>test</h1>

@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import { useSpring, animated, useTrail } from 'react-spring';
-
 import Footer from './footer/footer';
 import Header from './header/header';
 import Modal from './modal/modal';
@@ -28,12 +27,6 @@ const Main: React.FC<any> = () => {
 	};
 	const [modaleVar, setModaleVar] = useState(initialState);
 	let msaTest: any;
-	/* const test: any = async () => {
-	
-	};
-	test().then((msaTest = useSelector((state: any) => state.ModaleReducer))); */
-
-	/* onClick={(e: React.MouseEvent<HTMLParagraphElement, MouseEvent>): void => setMsa((msa) => !msa)} */
 
 	const items = [
 		'I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_I AM A FRONT-END DEVELOPER-REACTJS_',
