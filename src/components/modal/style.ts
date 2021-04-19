@@ -59,6 +59,34 @@ export const MODALE_CONTENT: React.CSSProperties = {
 	height: '100%',
 	width: '80%',
 	left: '10%',
+};
 
-	backgroundColor: 'yellow',
+export const CV_BUTTON_STYLE: React.CSSProperties = {
+	display: 'block',
+	position: 'relative',
+	borderRadius: '8%',
+	height: '55px',
+	width: '80px',
+	textAlign: 'center',
+	left: '50%',
+	transform: 'translate(-50%)',
+	marginBottom: '50px',
+	cursor: 'pointer',
+	outline: 'inherit',
+	border: 'none',
+	marginTop: '50px',
+	textDecoration: 'none',
+	fontSize: '16px',
+	background: 'rgb(245, 210, 9)',
+	boxShadow: ' inset 0px 0px  10px 0px rgb(15, 0, 9)',
+};
+export const PROJECT_CONTAINER_STYLE: React.CSSProperties = {
+	position: 'relative',
+
+	left: '50%',
+	transform: 'translate(-50%)',
+	margin: '40px 0px 50px 0px',
+	height: '230px',
+	width: '250px',
+	boxShadow: '-2px -1px 52px 10px rgba(0,0,0,0.83)',
 };

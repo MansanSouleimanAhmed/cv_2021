@@ -13,6 +13,7 @@ import {
 	RED_CROSS_ITEM_ONE_STYLE,
 	RED_CROSS_ITEM_TWO_STYLE,
 	MODALE_CONTENT,
+	CV_BUTTON_STYLE,
 } from './style';
 import { useDispatch } from 'react-redux';
 import False_Action from '../../redux-actions/false';
@@ -49,6 +50,7 @@ const Modal: React.FC<ModaleProps> = ({ setmodalevar, modalevar }) => {
 					<Profile />
 					<Project />
 					<Contact />
+					<button style={CV_BUTTON_STYLE}>CV_PDF</button>
 				</div>
 				<div style={RED_CROSS_STYLE} onClick={handleClick}>
 					<div style={RED_CROSS_ITEM_ONE_STYLE}></div>

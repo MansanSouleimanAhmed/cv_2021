@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import ReactDom from 'react-dom';
 import { useSelector } from 'react-redux';
+import { PROJECT_CONTAINER_STYLE } from '../style';
 
 // import { Container } from './styles';
 
@@ -16,7 +17,21 @@ const Profile: React.FC = () => {
 	return (
 		<Fragment>
 			<div style={style}>
-				<h1>Project</h1>
+				<div style={PROJECT_CONTAINER_STYLE}>
+					<img />
+				</div>
+				<br />
+				<br />
+				<div style={PROJECT_CONTAINER_STYLE}>
+					<img />
+				</div>
+				<br />
+				<br />
+				<div style={PROJECT_CONTAINER_STYLE}>
+					<img />
+				</div>
+				<br />
+				<br />
 			</div>
 		</Fragment>
 	);
