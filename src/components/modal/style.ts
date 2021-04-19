@@ -90,3 +90,39 @@ export const PROJECT_CONTAINER_STYLE: React.CSSProperties = {
 	width: '250px',
 	boxShadow: '-2px -1px 52px 10px rgba(0,0,0,0.83)',
 };
+export const IMG_STYLE: React.CSSProperties = {
+	height: '230px',
+	width: '250px',
+};
+
+export const PROJ_BUTTON_STYLE: React.CSSProperties = {
+	position: 'absolute',
+	borderRadius: '50%',
+	height: '70px',
+	width: '70px',
+	textAlign: 'center',
+	top: '64%',
+	left: '40%',
+	cursor: 'pointer',
+	outline: 'inherit',
+	border: 'none',
+	fontSize: '17px',
+	color: '#fff',
+	background: 'rgb(10, 152, 5)',
+	boxShadow: ' inset 0px 0px  15px 0px rgb(0, 12, 5)',
+};
+export const WEB_BUTTON_STYLE: React.CSSProperties = {
+	position: 'absolute',
+	borderRadius: '8%',
+	height: '55px',
+	width: '80px',
+	textAlign: 'center',
+	top: '4%',
+	left: '5%',
+	cursor: 'pointer',
+	outline: 'inherit',
+	border: 'none',
+	fontSize: '16px',
+	background: 'rgb(70, 188, 305)',
+	boxShadow: ' inset 0px 0px  10px 0px  rgb(12, 20, 7)',
+};

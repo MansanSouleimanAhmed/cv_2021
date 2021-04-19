@@ -23,7 +23,7 @@ const Footer: React.FC<ModaleProps> = ({ modalevar, setmodalevar }) => {
 		dispatch(Contact_Action());
 	};
 	return (
-		<footer className="footer header-footer-style">
+		<footer id="footer" className="footer header-footer-style">
 			<div className="item-one header-footer-style-item-one">
 				<p onClick={handleClick_Contact}>Contact</p>
 			</div>

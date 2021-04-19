@@ -22,7 +22,7 @@ const Header: React.FC<ModaleProps> = ({ modalevar, setmodalevar }) => {
 	let profileContent = useSelector((state: any) => state.ProfileContent);
 
 	return (
-		<header className="header header-footer-style">
+		<header id="header" className="header header-footer-style">
 			<div className="item-one header-footer-style-item-one">
 				<p onClick={handleClick_Msa}>Mansan S. Ahmed</p>
 			</div>
