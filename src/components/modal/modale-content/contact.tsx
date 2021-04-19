@@ -18,7 +18,24 @@ const Contact: React.FC = () => {
 	return (
 		<Fragment>
 			<div style={style}>
-				<h1>Contact</h1>
+				<div>
+					<p style={{ wordBreak: 'break-all', paddingBottom: '20px', paddingTop: '20px' }}>
+						<strong>Mail</strong> : <span> mansan.souleiman.ahmed@gmail.com</span>
+					</p>
+					<hr />
+					<p style={{ wordBreak: 'break-all', paddingBottom: '20px', paddingTop: '20px' }}>
+						<strong>Phone number</strong> : <span> + 32 465 34 74 37</span>
+					</p>
+					<hr />
+					<p style={{ wordBreak: 'break-all', paddingBottom: '20px', paddingTop: '20px' }}>
+						<strong>Location</strong> : <span> Leuven</span>
+					</p>
+					<hr />
+					<p style={{ wordBreak: 'break-all', paddingBottom: '20px', paddingTop: '20px' }}>
+						<strong>Postal code</strong> : <span> 3000 </span>
+					</p>
+					<hr />
+				</div>
 			</div>
 		</Fragment>
 	);
