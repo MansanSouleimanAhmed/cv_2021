@@ -6,6 +6,8 @@ import Project from './modale-content/project';
 import Contact from './modale-content/contact';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+/* @ts-ignore */
+import MonCv from '../../../src/cv.pdf';
 import {
 	MODAL_STYLE,
 	OVERLAY_STYLE,
@@ -17,7 +19,6 @@ import {
 } from './style';
 import { useDispatch } from 'react-redux';
 import False_Action from '../../redux-actions/false';
-// import { Container } from './styles';
 
 interface ModaleProps {
 	modalevar: { modale: boolean; profile: boolean; msa: boolean; contact: boolean; project: boolean };
@@ -50,7 +51,9 @@ const Modal: React.FC<ModaleProps> = ({ setmodalevar, modalevar }) => {
 					<Profile />
 					<Project />
 					<Contact />
-					<button style={CV_BUTTON_STYLE}>CV_PDF</button>
+					<a href={MonCv} style={{ textDecoration: 'none' }} download={'cv.pdf'}>
+						<button style={CV_BUTTON_STYLE}>CV_PDF</button>
+					</a>
 				</div>
 				<div style={RED_CROSS_STYLE} onClick={handleClick}>
 					<div style={RED_CROSS_ITEM_ONE_STYLE}></div>

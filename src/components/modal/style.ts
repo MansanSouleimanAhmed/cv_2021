@@ -75,7 +75,6 @@ export const CV_BUTTON_STYLE: React.CSSProperties = {
 	outline: 'inherit',
 	border: 'none',
 	marginTop: '50px',
-	textDecoration: 'none',
 	fontSize: '16px',
 	background: 'rgb(245, 210, 9)',
 	boxShadow: ' inset 0px 0px  10px 0px rgb(15, 0, 9)',
