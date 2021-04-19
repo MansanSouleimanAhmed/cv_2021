@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/static/js/main.c10197b1.chunk.js",
+    "main.js.map": "/static/js/main.c10197b1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0733fe2d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0733fe2d.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.7d15efa5.chunk.js": "/static/js/2.7d15efa5.chunk.js",
+    "static/js/2.7d15efa5.chunk.js.map": "/static/js/2.7d15efa5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/js/2.7d15efa5.chunk.js.LICENSE.txt": "/static/js/2.7d15efa5.chunk.js.LICENSE.txt",
+    "static/media/creatif.5945ff91.png": "/static/media/creatif.5945ff91.png",
+    "static/media/cv-image.0e3b8ade.png": "/static/media/cv-image.0e3b8ade.png",
+    "static/media/cv.5468bf94.pdf": "/static/media/cv.5468bf94.pdf",
+    "static/media/game-rps.a5558e22.jpg": "/static/media/game-rps.a5558e22.jpg",
+    "static/media/huddle.1f117ef3.jpg": "/static/media/huddle.1f117ef3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0733fe2d.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.7d15efa5.chunk.js",
+    "static/js/main.c10197b1.chunk.js"
+  ]
+}
