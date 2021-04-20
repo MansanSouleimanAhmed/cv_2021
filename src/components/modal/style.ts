@@ -93,6 +93,11 @@ export const IMG_STYLE: React.CSSProperties = {
 	height: '230px',
 	width: '250px',
 };
+export const P_STYLE: React.CSSProperties = {
+	paddingTop: '20px',
+	lineHeight: '30px',
+	paddingBottom: '30px',
+};
 
 export const PROJ_BUTTON_STYLE: React.CSSProperties = {
 	position: 'absolute',
