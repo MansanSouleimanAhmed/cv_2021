@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.ce9e227d.chunk.js",
-    "main.js.map": "/static/js/main.ce9e227d.chunk.js.map",
+    "main.js": "/static/js/main.a5e642dd.chunk.js",
+    "main.js.map": "/static/js/main.a5e642dd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0733fe2d.js",
     "runtime-main.js.map": "/static/js/runtime-main.0733fe2d.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
@@ -14,12 +14,14 @@
     "static/media/cv-image.0e3b8ade.png": "/static/media/cv-image.0e3b8ade.png",
     "static/media/cv.5468bf94.pdf": "/static/media/cv.5468bf94.pdf",
     "static/media/game-rps.a5558e22.jpg": "/static/media/game-rps.a5558e22.jpg",
-    "static/media/huddle.1f117ef3.jpg": "/static/media/huddle.1f117ef3.jpg"
+    "static/media/huddle.1f117ef3.jpg": "/static/media/huddle.1f117ef3.jpg",
+    "static/media/npm.c14fd9f3.png": "/static/media/npm.c14fd9f3.png",
+    "static/media/wordpress.fe2a20db.png": "/static/media/wordpress.fe2a20db.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0733fe2d.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.7d15efa5.chunk.js",
-    "static/js/main.ce9e227d.chunk.js"
+    "static/js/main.a5e642dd.chunk.js"
   ]
 }

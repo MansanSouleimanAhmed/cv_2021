@@ -6,6 +6,8 @@ import CV from '../../../images/cv-image.png';
 import GameRPS from '../../../images/game-rps.jpg';
 import Hubble from '../../../images/huddle.jpg';
 import Creatif from '../../../images/creatif.png';
+import Npm from '../../../../src/images/npm.png';
+import Wordpress from '../../../../src/images/wordpress.png';
 
 // import { Container } from './styles';
 
@@ -25,6 +27,21 @@ const Profile: React.FC = () => {
 					<img src={CV} style={IMG_STYLE} />
 					<a href={'https://github.com/ms-ahmed/cv_2021'} target={'_blank'}>
 						<button style={PROJ_BUTTON_STYLE}>{'Github'}</button>
+					</a>
+				</div>
+				<br />
+				<br />
+				<div style={PROJECT_CONTAINER_STYLE}>
+					<img src={Npm} style={IMG_STYLE} />
+					<a
+						href={'https://codesandbox.io/s/young-darkness-3iq93?file=/src/div-hooks-component.tsx'}
+						target={'_blank'}
+					>
+						<button style={WEB_BUTTON_STYLE}>{'Live'}</button>
+					</a>
+
+					<a href={'https://www.npmjs.com/package/magnifying-div-animation'} target={'_blank'}>
+						<button style={PROJ_BUTTON_STYLE}>{'Npm'}</button>
 					</a>
 				</div>
 				<br />
@@ -59,6 +76,14 @@ const Profile: React.FC = () => {
 					</a>
 					<a href={'https://github.com/ms-ahmed/hubble'} target={'_blank'}>
 						<button style={PROJ_BUTTON_STYLE}>{'Github'}</button>
+					</a>
+				</div>
+				<br />
+				<br />
+				<div style={PROJECT_CONTAINER_STYLE}>
+					<img src={Wordpress} style={IMG_STYLE} />
+					<a href={'https://dev-fredericburdot.pantheonsite.io/'} target={'_blank'}>
+						<button style={WEB_BUTTON_STYLE}>{'Website'}</button>
 					</a>
 				</div>
 				<br />

@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
 		<Fragment>
 			<div style={style}>
 				<div>
-					<p style={{ wordBreak: 'break-all', paddingBottom: '20px', paddingTop: '20px' }}>
+					<p style={{ wordBreak: 'break-all', paddingBottom: '20px', paddingTop: '70px' }}>
 						<strong>Mail</strong> : <span> mansan.souleiman.ahmed@gmail.com</span>
 					</p>
 					<hr />
